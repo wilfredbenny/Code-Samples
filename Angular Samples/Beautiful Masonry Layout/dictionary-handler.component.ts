@@ -29,7 +29,6 @@ Sed:any;
           ...e.payload.doc.data() as any
         }  as any;
       })
-      console.log("hu",this.Dict);
     });
   }
 AddNew(){
