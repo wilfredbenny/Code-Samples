@@ -1,0 +1,56 @@
+<div class="container">
+   <h1>Dictionary</h1>
+   <h2>Contents</h2>
+   <!-- <div class=""  *ngFor="let dct of Dict" routerLink="/shop_handler/{{dct.MID}}">
+ {{ dct.Content }}</div>
+  *ngFor="let i = index"
+  -->
+   <ngx-masonry>
+      <div ngxMasonryItem class="masonry-item" *ngFor="let dct of Dict;let i = index"
+         routerLink="/dict_category_handler/{{dct.id}}">
+         <button class="card cvixx  inX{{i}}">
+            <ol type="1" class="label_1">
+               <li *ngIf="dct.Content_0">{{ dct.Content_0}}</li>
+               <li *ngIf="dct.Content_1">{{ dct.Content_1 }}</li>
+               <li *ngIf="dct.Content_2">{{ dct.Content_2 }}</li>
+               <li *ngIf="dct.Content_3">{{ dct.Content_3 }}</li>
+               <li *ngIf="dct.Content_4"> {{ dct.Content_4 }}</li>
+               <li *ngIf="dct.Content_5">{{ dct.Content_5 }}</li>
+               <li *ngIf="dct.Content_6">{{ dct.Content_6 }}</li>
+               <li *ngIf="dct.Content_7">{{ dct.Content_7 }}</li>
+               <li *ngIf="dct.Content_8">{{ dct.Content_8 }}</li>
+               <li *ngIf="dct.Content_9">{{ dct.Content_9 }}</li>
+               <li *ngIf="dct.Content_10">{{ dct.Content_10 }}</li>
+               <li *ngIf="dct.Content_11">{{ dct.Content_11 }}</li>
+               <li *ngIf="dct.Content_12">{{ dct.Content_12 }}</li>
+               <li *ngIf="dct.Content_13">{{ dct.Content_13 }}</li>
+               <li *ngIf="dct.Content_14">{{ dct.Content_14 }}</li>
+               <li *ngIf="dct.Content_15">{{ dct.Content_15 }}</li>
+               <li *ngIf="dct.Content_16">{{ dct.Content_16 }}</li>
+               <li *ngIf="dct.Content_17">{{ dct.Content_17 }}</li>
+               <li *ngIf="dct.Content_18">{{ dct.Content_18 }}</li>
+               <li *ngIf="dct.Content_19">{{ dct.Content_19 }}</li>
+               <li *ngIf="dct.Content_20">{{ dct.Content_20 }}</li>
+               <li *ngIf="dct.Content_21">{{ dct.Content_21 }}</li>
+               <li *ngIf="dct.Content_22">{{ dct.Content_22 }}</li>
+               <li *ngIf="dct.Content_23">{{ dct.Content_23 }}</li>
+               <li *ngIf="dct.Content_24">{{ dct.Content_24 }}</li>
+               <li *ngIf="dct.Content_25">{{ dct.Content_25 }}</li>
+               <li *ngIf="dct.Content_26">{{ dct.Content_26 }}</li>
+               <li *ngIf="dct.Content_27">{{ dct.Content_27 }}</li>
+               <li *ngIf="dct.Content_28">{{ dct.Content_28 }}</li>
+               <li *ngIf="dct.Content_29">{{ dct.Content_29 }}</li>
+            </ol>
+         </button>
+      </div>
+   </ngx-masonry>
+   <!--<div class="float-bottom"></div> -->
+   <div class="bottomPadding"></div>
+   <br />
+</div>
+<div class="btnAdj">
+   <button class="buttonFl" (click)="AddNew()"> Add
+      <!--<img class="imgAdd" src="assets/vplus/Add.png"  width="70%" height="70%" opacity="0.5" class="imagex">-->
+   </button>
+</div>
+<div class="divFl"></div>

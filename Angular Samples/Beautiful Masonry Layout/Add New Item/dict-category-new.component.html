@@ -1,0 +1,45 @@
+<div class="container">
+  <!--<form [formGroup]="addmore">
+</form>-->
+  <form [formGroup]="contentForm" (ngSubmit)="Submit()" novalidate>
+    <br>
+    <h2>{{ name }}</h2>
+    <br />
+    <div class="wrn">
+      <div class="hDiv" id="hideDiv">
+        ⚠ Maximum allowed entries are limited to 25
+      </div>
+    </div>
+    <br />
+    <div class="row justify-content-center">
+      <div class="colX1">
+        <label>Contents</label>
+        <input type="text" formControlName="Content_0" class="form-control xsm" id="prel" autocomplete="off">
+        <div *ngFor="let value of values; let i = index">
+          <div class="d-flex">
+            <input type="text" class="form-control xsm" id="sec{{i}}" autocomplete="off">
+            <button class="rmBtn" type="button" (click)="removevalue(i)">Remove</button>
+          </div>
+        </div>
+        <button class="addInpBtn" type="button" (click)="addvalue()">Add</button>
+        <br />
+        <br />
+      </div>
+      <div class="colX2">
+        <label>Use</label> <textarea formControlName="Use" class="form-control x" required
+          autocomplete="off"> </textarea>
+        <label>Side Effects</label> <textarea formControlName="SideEffects" class="form-control x" required
+          autocomplete="off">  </textarea>
+        <label>How it Works</label> <textarea formControlName="Working" class="form-control x" required
+          autocomplete="off"></textarea>
+        <label>Usage</label> <textarea formControlName="Usage" class="form-control x" required
+          autocomplete="off"></textarea>
+      </div>
+    </div>
+    <br /><br />
+    <div class="d-flex justify-content-center">
+      <button class="buttonx" type="submit" [disabled]="!contentForm.valid">Save</button>
+    </div>
+    <br /><br /><br /><br />
+  </form>
+</div>

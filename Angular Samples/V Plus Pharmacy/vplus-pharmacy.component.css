@@ -1,0 +1,165 @@
+
+@media only screen and (min-width: 767px)
+{ /* Design for desktop */
+
+
+}
+
+.corona{
+  border-radius: 26px;
+  border-color: #ffe60000;
+  background-color: transparent;
+  border-top: transparent;
+
+}
+
+.browser{
+  width:100%;
+  height:10%;
+
+}
+.invisiblex{
+  background-color: rgba(124, 45, 45, 0);
+  border: 0px;
+}
+
+.x{
+  color: rgb(28, 28, 30);
+  background: rgb(209, 209, 214);
+  font-size: 15px;
+  border-radius: 19px;
+  border: 0px;
+  width:auto;
+}
+
+
+.xt{
+  color: #646464;
+}
+.fcenter
+{
+  align-items:center;
+
+}
+
+.cardx{
+  background-color:transparent;
+  border: 0px;
+}
+
+/* WEBKITS--------------------------------------------------------------------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+cursor: pointer;
+}
+
+Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px rgb(0, 0, 0); */
+
+  /* box-shadow: inset 0 0 100px rgb(66, 66, 66); */
+  box-shadow:transparent;
+  border-radius: 10px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(31, 31, 31);
+  border-radius: 100px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffe600;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+::-webkit-scrollbar-track {
+  margin-top: 19px;
+  margin-bottom: 19px;
+
+
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+/* WEBKIT ENDS --------------------------------------------------------------------------- */
+
+
+/* CUSTOM CSS --------------------------------------------------- */
+
+.buttonx
+{
+  border-radius: 40px;
+  height: 60px;
+  width:250px;
+  background:#ffffffcb;
+  color: rgb(34, 34, 34);
+  border: 0px;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 6px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 110, 255, 0.068),
+  0 6.7px 5.3px rgba(255, 0, 0, 0.024),
+  0 12.5px 10px rgba(0, 140, 255, 0.011),
+  0 22.3px 17.9px rgba(255, 0, 0, 0.010),
+  0 41.8px 33.4px rgba(0, 119, 255, 0.011),
+  0 100px 80px rgba(255, 255, 255, 0.12)
+;
+}
+.buttonx:hover {
+  transition: 0.2s ease-in-out;
+  background:rgb(94, 92, 230);
+  color: #ffffff;
+}
+.buttonxd
+{ width:max-content;
+  border-radius: 40px;
+  height: 60px;
+  width:250px;
+  max-width: 250px;
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+   background:rgb(255, 255, 255);
+  color: #000000;
+
+  border: 0px;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 6px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 110, 255, 0.011),
+  0 6.7px 5.3px rgba(255, 0, 0, 0.024),
+  0 12.5px 10px rgba(0, 140, 255, 0.01),
+  0 22.3px 17.9px rgba(255, 0, 0, 0.011),
+  0 41.8px 33.4px rgba(0, 119, 255, 0.011),
+  0 100px 80px rgba(255, 255, 255, 0.12)
+;
+}
+.buttonxd:hover {
+  transition: 0.2s ease-in-out;
+  height: 60px;
+  width:255px;
+  background:rgb(94, 92, 230);
+  color: rgb(255, 255, 255);
+
+
+}
+

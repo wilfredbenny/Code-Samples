@@ -1,0 +1,250 @@
+
+
+@media only screen and (min-width: 767px)
+{ /* Design for desktop */
+
+
+}
+
+.corona{
+  border-radius: 26px;
+  border-color: #ffe60000;
+  background-color: rgb(229, 229, 234);
+  border-top: transparent;
+
+}
+
+.browser{
+  width:100%;
+  height:10%;
+
+}
+.invisiblex{
+  background-color: rgba(124, 45, 45, 0);
+  border: 0px;
+}
+
+.x{
+  color: rgb(28, 28, 30);
+  background: rgb(238, 235, 250);
+  font-size: 15px;
+  border-radius: 19px;
+  border: 0px;
+  width:auto;
+  box-shadow:
+  0 2.2px 13.2px rgba(255, 255, 255, 0.077),
+  0 6.7px 5.3px rgba(255, 0, 0, 0.011),
+  0 12.5px 10px rgba(0, 140, 255, 0.011),
+  0 22.3px 17.9px rgba(255, 0, 0, 0.011),
+  0 41.8px 33.4px rgba(0, 119, 255, 0.011),
+  0 100px 80px rgba(255, 255, 255, 0.12)
+;
+margin-bottom: 15px;
+
+}
+
+
+.xt{
+  color: #646464;
+}
+.fcenter
+{
+  align-items:center;
+
+}
+
+.cardx{
+  background-color:transparent;
+  border: 0px;
+}
+
+/* WEBKITS--------------------------------------------------------------------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+cursor: pointer;
+}
+
+Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px rgb(0, 0, 0); */
+
+  /* box-shadow: inset 0 0 100px rgb(66, 66, 66); */
+  box-shadow:transparent;
+  border-radius: 10px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(31, 31, 31);
+  border-radius: 100px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffe600;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+::-webkit-scrollbar-track {
+  margin-top: 19px;
+  margin-bottom: 19px;
+
+
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+/* WEBKIT ENDS --------------------------------------------------------------------------- */
+
+
+/* CUSTOM CSS --------------------------------------------------- */
+
+.buttonx
+{
+  border-radius: 40px;
+  height: 60px;
+  width:250px;
+  background:rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 0px;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 6px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 110, 255, 0.068),
+  0 6.7px 5.3px rgba(255, 0, 0, 0.024),
+  0 12.5px 10px rgba(0, 140, 255, 0.011),
+  0 22.3px 17.9px rgba(255, 0, 0, 0.010),
+  0 41.8px 33.4px rgba(0, 119, 255, 0.011),
+  0 100px 80px rgba(255, 255, 255, 0.12)
+;
+
+}
+.buttonx:hover {
+  transition: 0.2s ease-in-out;
+  background:rgb(94, 92, 230);
+  color: #ffffff;
+}
+.buttonxlarge
+{
+  border-radius: 40px;
+  height: auto;
+  width:auto;
+  min-width:320px;
+  max-width: 500px;
+  background:rgb(94, 92, 230);
+  color: rgb(255, 255, 255);
+  border: 0px;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 6px;
+}
+.buttonxlarge:hover {
+  transition: 0.52s ease-in-out;
+  background:rgb(86, 91, 109);
+  color: #ffffff;
+}
+.text_left{
+  text-align: left;
+  margin-left: 10px;
+}
+.dividx{
+  margin:16px;
+  background-color: transparent;
+}
+.card{
+  width:auto;
+}
+.head{
+  font-size: 18px;
+}
+.subm-btn
+{
+  border-radius: 40px;
+  height: 50px;
+  width:120px;
+  background:#ffffff;
+  color: rgb(34, 34, 34);
+  border: 0px;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 6px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 110, 255, 0.068),
+  0 6.7px 5.3px rgba(255, 0, 0, 0.024),
+  0 12.5px 10px rgba(0, 140, 255, 0.011),
+  0 22.3px 17.9px rgba(255, 0, 0, 0.010),
+  0 41.8px 33.4px rgba(0, 119, 255, 0.011),
+  0 100px 80px rgba(255, 255, 255, 0.12)
+;
+
+}
+.subm-btn:hover {
+  transition: 0.2s ease-in-out;
+  background:rgb(94, 92, 230);
+  color: #ffffff;
+}
+textarea{
+  height:130px;
+  resize: none;
+}
+
+.labelx label{
+margin-left: 5px;
+margin-top: 15px;
+
+}
+.cncl-btn
+{
+  border-radius: 40px;
+  height: 50px;
+  width:120px;
+  background:#ffffff;
+  color: rgb(34, 34, 34);
+  border: 0px;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 6px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 110, 255, 0.068),
+  0 6.7px 5.3px rgba(255, 0, 0, 0.024),
+  0 12.5px 10px rgba(0, 140, 255, 0.011),
+  0 22.3px 17.9px rgba(255, 0, 0, 0.010),
+  0 41.8px 33.4px rgba(0, 119, 255, 0.011),
+  0 100px 80px rgba(255, 255, 255, 0.12)
+;
+
+
+}
+.cncl-btn:hover {
+  transition: 0.2s ease-in-out;
+  background:rgb(230, 92, 104);
+  color: #ffffff;
+  box-shadow:
+  0 2.8px 2.2px rgba(255, 0, 34, 0.068),
+  0 6.7px 5.3px rgba(255, 0, 21, 0.024),
+  0 12.5px 10px rgba(255, 0, 34, 0.011),
+  0 22.3px 17.9px rgba(255, 0, 34, 0.01),
+  0 0px 33.4px rgba(255, 0, 43, 0.247),
+  0 100px 80px rgba(255, 255, 255, 0.12)
+  ;
+
+
+}
+.widther{
+  width:800px;
+}
+

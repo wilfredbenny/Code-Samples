@@ -1,0 +1,28 @@
+<div class="container">
+  <br>
+  <div class="d-flex justify-content-center">
+    <h1 class="d-flex">V Plus Pharmacy</h1>
+  </div>
+  <br>
+  <div class="row invisiblex " fxLayoutGap="6px">
+    <div class="col-sm invisiblex ">
+      <div class="card cardx invisiblex fcenter">
+        <br>
+        <button *ngFor="let phrm of Pharma" class="buttonxd" mat-stroked-button routerLink="/shop_handler/{{phrm.PID}}">
+          {{ phrm.Name }}
+        </button>
+      </div>
+    </div>
+    <div class="col-sm invisiblex">
+      <div class="card cardx column fcenter">
+        <br>
+        <button class="buttonx" (click)="salesWindow()">Sales</button>
+        <button class="buttonx" (click)="purchaseWindow()">Purchase</button>
+        <button class="buttonx" (click)="openDictionary()">Dictionary</button>
+        <button class="buttonx " (click)="newShop()">New Pharmacy</button>
+        <button class="buttonx " (click)="newStaff()">New Staff</button>
+        <button class="buttonx " (click)="category()">Category</button>
+      </div>
+    </div>
+  </div>
+</div>

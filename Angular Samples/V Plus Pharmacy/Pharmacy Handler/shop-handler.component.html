@@ -1,0 +1,99 @@
+<div class="container">
+  <form [formGroup]="handlerForm">
+    <br>
+    <div class="d-flex justify-content-center">
+      <h1 class="d-flex">{{P_Name}}</h1>
+    </div>
+    <br>
+    <div class="row invisiblex " fxLayoutGap="6px">
+      <div class="col-sm invisiblex ">
+        <div class="card cardx invisiblex fcenter">
+          <br>
+          <div class="card invisiblex">
+            <!-- <h2>Phone: {{P_Phone}}</h2>
+        <h2>Address: {{P_Address}}</h2>
+        <h2>GST: {{P_GST}}</h2> -->
+            <div *ngIf="isValid;then c1 else c2"></div>
+            <ng-template #c1>
+
+              <button class="buttonxlarge ">
+                <div class="text_left dividx" (click)="flag()">
+                  <!-- button inside default routing code routerLink="/shop_edit/{{P_ID}}"" -->
+                  <br>
+                  <h1>Overview</h1>
+                  <label class="head">ID</label><br><label> {{P_ID}}</label><br>
+                  <label class="head">Phone</label><br><label> {{P_Phone}}</label><br>
+                  <label class="head">Address</label><br><label> {{P_Address}}</label><br>
+                  <label class="head">GST</label><br><label> {{P_GST}}</label><br>
+                  <Ul class="head">Staffs<li> Name 1</li>
+                    <li> Name 2</li>
+                  </Ul>
+                </div>
+              </button>
+            </ng-template>
+            <ng-template #c2>
+              <form [formGroup]="handlerForm" (ngSubmit)="onSubmit()" novalidate>
+                <div class="d-flex justify-content-center">
+                  <div class="row labelx">
+                    <div class="cardx col-sm">
+                      <div class="justify-content-center">
+                        <div>
+                          <h2>{{P_ID}}</h2>
+                        </div>
+                        <div>
+                          <label>Name</label>
+                          <input type="text" formControlName="Name" class="form-control x">
+                        </div>
+                        <div>
+                          <label>Password</label>
+                          <input type="password" formControlName="Password" class="form-control x">
+                        </div>
+                        <div>
+                          <label>GST No.</label>
+                          <input type="text" formControlName="GST" class="form-control x">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm">
+                      <div class="justify-content-center">
+                        <div>
+                          <label>Phone</label>
+                          <input type="number" formControlName="Phone" class="form-control x">
+                        </div>
+                        <div>
+                          <label>Address</label>
+                          <input type="text" formControlName="Address" class="form-control x">
+                        </div>
+                        <div>
+                          <label>Others</label>
+                          <textarea formControlName="Others" class="form-control x" required></textarea>
+                        </div>
+                        <br>
+                        <div class="row justify-content-center">
+                          <button type="submit" class="subm-btn">Update</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="row justify-content-center">
+                <button class="cncl-btn" (click)="Cancel()">Cancel</button>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm invisiblex">
+        <div class="card cardx column fcenter">
+          <br>
+          <button class="buttonx" routerLink="/ph_sales/{{P_ID}}">Sales</button>
+          <button class="buttonx" routerLink="/ph_purchases/{{P_ID}}">Purchase</button>
+          <button class="buttonx" routerLink="/ph_stocks/{{P_ID}}">Stocks</button>
+          <button class="buttonx" routerLink="/ph_bills/{{P_ID}}">Bills</button>
+          <button class="buttonx" routerLink="/ph_activity/{{P_ID}}">Activity</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
